@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/text_Red"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="RED"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <SeekBar
+        android:id="@+id/seekRED"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="4"
+        android:max="255"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_Green"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GREEN"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekGREEN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:max="255" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_Blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BLUE"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    <SeekBar
+        android:id="@+id/seekBLUE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+        android:max="255"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hatter_RGB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        android:textSize="100sp"
+
+        />
+
+
+</LinearLayout>
