@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity
         green=seekGreen.getProgress();
         blue=seekBlue.getProgress();
         hatter_RGB.setBackgroundColor(Color.rgb(red,green,blue));
+        hatter_RGB.setText("("+red+","+green+","+blue+")");
+
     }
     @Override
     public void onStartTrackingTouch (SeekBar seekBar){
